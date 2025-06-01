@@ -1,0 +1,424 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.menu-topo {
+  background-color: #ff5722; /* Laranja forte */
+  padding: 1rem 0;
+}
+
+.container-menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.logo img {
+  height: 100px; /* Ajuste conforme o tamanho da sua logo */
+}
+
+.menu-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  overflow-x: auto;
+}
+
+.menu-nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.menu-nav a.ativo {
+  color: yellow;
+}
+
+.menu-nav a:hover {
+  text-decoration: underline;
+}
+
+.produtos {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.produtos h2 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #f4a261;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem;
+  font-size: 1.2rem;
+  color: #a94400;
+}
+
+.card p {
+  margin: 0 1rem 1rem;
+  color: #5a5a5a;
+  font-size: 0.95rem;
+}
+
+.contato {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contato h2 {
+  text-align: center;
+  color: #0f172a;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.formulario {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.formulario input,
+.formulario textarea {
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.formulario button {
+  width: 120px;
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #ea580c;
+}
+
+.informacoes {
+  flex: 1;
+  min-width: 280px;
+  color: #1f2937;
+  font-size: 1rem;
+}
+
+.informacoes p {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.informacoes h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.rodape {
+  background-color: #ff5722;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rodape .redes-sociais a {
+  color: white;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.rodape .redes-sociais a:hover {
+  color: #f4a261;
+}
+
+
+.h2central {
+  font-size: 4rem;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.mapas {
+  padding: 2rem;
+  text-align: center;
+}
+
+.mapas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* <-- CENTRALIZA os itens na horizontal */
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;       /* Limita largura total para centralizar melhor */
+  margin: 0 auto;          /* <-- CENTRALIZA a .mapas-container na página */
+}
+
+.mapa-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+
+.mapa-item p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.frames {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366; /* verde WhatsApp */
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C21;
+}
+
+.whatsapp-btn img {
+  width: 32px;
+  height: 32px;
+}
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff5eb;
+  color: #5a2c1d;
+  line-height: 1.6;
+}
+
+
+
+.texto {
+  max-width: 700px;
+  text-align: center;
+}
+
+.texto h1, .texto h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #702b16;
+}
+
+.texto p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #e65010;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.imagem img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+
+.bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.bloco-topo {
+  background-color: #fff0e0;
+  padding-bottom: 25px; /* ou menos */
+  position: relative;
+  z-index: 1;
+  padding-top: 70px; /* Aumenta a distância do topo */
+
+}
+
+.bloco-sobre {
+  background-color: #fff5eb;
+  margin-top: -60px; /* ajusta até cortar o topo da seção */
+  position: relative;
+  z-index: 0;
+}
+
+.conteudo-lado-a-lado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* permite quebrar em telas menores */
+}
+
+.conteudo-lado-a-lado .texto,
+.conteudo-lado-a-lado .imagem {
+  flex: 1 1 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ✅ Responsividade para telas menores */
+@media (max-width: 768px) {
+  .h2central {
+    font-size: 2.5rem;
+  }
+
+  .mapa-item p {
+    font-size: 1.2rem;
+  }
+
+  .frames {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .conteudo-lado-a-lado {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .conteudo-lado-a-lado .imagem img {
+    max-width: 100%;
+  }
+}
